@@ -15,3 +15,6 @@ SPI Bare metal drivers for stm32 f4 family of microcontrollers written in C from
 # driver apis Usage  
 All the examples and code have been tested on [Stm32f407vgt6 disc1 board](https://www.st.com/en/evaluation-tools/stm32f4discovery.html) if you own a different board from st of F4 family no changes should be made to the code 
 
+##
+ Check out this video for a video guide on how to use the apis and many other things [Stm32 SPI Communication bare metal from scratch](https://www.st.com/en/evaluation-tools/stm32f4discovery.html) 
+
