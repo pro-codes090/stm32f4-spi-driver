@@ -141,13 +141,13 @@ int main(void)
 		//enable the SPI2 peripheral
 		SPI_PeripheralControl(SPI2,ENABLE);
 
-//		while(!rcvStop){
+		while(!rcvStop){
 			/* fetch the data from the SPI peripheral byte by byte in interrupt mode */
 			while ( SPI_SendIT(&SPI2handle,&dummy,1) == SPI_BUSY_IN_TX);
 			while ( SPI_ReadIT(&SPI2handle,&ReadByte,1) == SPI_BUSY_IN_RX );
-
-			while ( SPI_SendIT(&SPI2handle,&dummy,1) == SPI_BUSY_IN_TX);
-			while ( SPI_ReadIT(&SPI2handle,&ReadByte,1) == SPI_BUSY_IN_RX );
+		}
+// 			while ( SPI_SendIT(&SPI2handle,&dummy,1) == SPI_BUSY_IN_TX);
+// 			while ( SPI_ReadIT(&SPI2handle,&ReadByte,1) == SPI_BUSY_IN_RX );
 
 
 		// confirm SPI is not busy
